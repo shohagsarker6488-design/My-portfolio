@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2563eb;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+label {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #bfdbfe;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: 25px auto 0;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f2937;
+}
+a {
+    display: block;
+    width: 200px;
+    margin: 25px auto 0;
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #1f2937;
+    transform: translateY(-3px);
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 20px 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+<form>
+
+    <label>Full Name:</label>
+    <input type="text" required>
+
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" required>
+
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" required>
+<br><br>
+
+<label>Gender:</label>
+
+<input type="radio" name="gender" value="male" required>
+Male
+
+<input type="radio" name="gender" value="female" required>
+Female
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date" required>
+<br><br>
+
+<label>Subject:</label>
+
+<select required>
+    <option value="">Select Subject</option>
+    <option>Science</option>
+    <option>Arts</option>
+    <option>Commerce</option>
+</select>
+<br><br>
+
+<label>Address:</label>
+
+<br>
+
+<textarea rows="4" cols="40" required></textarea>
+<br><br>
+
+<label>Hobbies:</label>
+
+<br>
+
+<input type="checkbox" name="hobby" value="reading">
+Reading
+
+<input type="checkbox" name="hobby" value="coding">
+Coding
+
+<input type="checkbox" name="hobby" value="sports">
+Sports
+<br><br>
+
+<input type="submit" value="Register">
+</form>
+<br>
+
+<a href="index.html">← Back to Portfolio</a>
+</body>
+</html>
