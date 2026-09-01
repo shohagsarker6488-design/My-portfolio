@@ -71,10 +71,10 @@
                 text-align: center;
             }
             .project-container{
-               display: flex;
+               display: flex !important; 
                flex-direction: column !important;
-               gap: 20px;
-                width: 100%;
+               gap: 20px !important;
+                width: 100% !important;
                 flex-wrap: nowrap !important;
             }
             article{
@@ -104,6 +104,9 @@
               width: 100% !important;
                min-width: 0 !important;
                 flex: none !important;
+                flex-basis: auto !important;
+                max-width: 100% !important;
+                box-sizing: border-box;
 }
         }
         h1{
