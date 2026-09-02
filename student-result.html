@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students Result Table</title>
     <style>
-
+     * {
+    box-sizing: border-box;
+}
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
@@ -18,10 +20,13 @@
         color: #2563eb;
     }
 table {
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
+    table-layout: fixed;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 th,
 td {
@@ -54,28 +59,37 @@ a:hover {
 @media (max-width: 600px) {
 
     body {
-        padding: 20px 10px;
-    }
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 10px;
+    overflow-x: hidden;
+}
 
     h1 {
         font-size: 28px;
     }
 
-    table {
-        width: 100%;
-        font-size: 16px;
-    }
-
+   table {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    table-layout: fixed;
+    box-sizing: border-box;
+}
     th,
     td {
         padding: 10px 6px;
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
 
     a {
-        width: 100%;
-        font-size: 17px;
-        padding: 12px 18px;
-    }
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    padding: 12px 18px;
+}
 }
 </style>
 </head>

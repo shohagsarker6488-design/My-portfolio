@@ -87,6 +87,13 @@ textarea:focus {
 }
 @media (max-width: 600px) {
 
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     body {
         padding: 20px 10px;
     }
@@ -97,7 +104,10 @@ textarea:focus {
 
     form {
         width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
         padding: 25px 18px;
+        box-sizing: border-box;
     }
 
     label {
@@ -110,32 +120,37 @@ textarea:focus {
     input[type="date"],
     select,
     textarea {
+        width: 100%;
+        max-width: 100%;
         font-size: 17px;
         padding: 12px;
+        box-sizing: border-box;
     }
 
     textarea {
-        width: 100%;
-        box-sizing: border-box;
+        resize: vertical;
     }
 
     input[type="radio"],
     input[type="checkbox"] {
+        width: auto;
         transform: scale(1.1);
     }
 
     input[type="submit"] {
         width: 100%;
+        max-width: 100%;
         font-size: 17px;
         padding: 13px;
     }
 
-    a {
+    body > a {
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
         font-size: 17px;
         padding: 12px 18px;
     }
-
 }
 </style>
 </head>
@@ -186,7 +201,7 @@ Female
 
 <br>
 
-<textarea rows="4" cols="40" required></textarea>
+<textarea rows="4" required></textarea>
 <br><br>
 
 <label>Hobbies:</label>
